@@ -5,7 +5,8 @@
 This project is the Practical assignment for module 11to identify what drives the price of a car. 
 The analysis and findings were performed using python; additionally, sklearn, matplotlib.pyplot, seaborn, pandas, and numpy libraries were used for computation and visualization.
 
-Notebook: https://github.com/johennie/what_drives_a_car_price/blob/main/notebooks/prompt_II.ipynb  
+Notebook: https://github.com/johennie/what_drives_a_car_price/blob/main/notebooks/prompt_II.ipynb
+
 Data: https://github.com/johennie/what_drives_a_car_price/tree/main/data
 
 ## Summary for car salesmen
@@ -13,8 +14,11 @@ The most important features driving the price of a used car are odometer, year, 
 Where the higher the odometer reading, the lower the price. Similarly, the older the car manufacturing 
 year, the lower the price. The fuel type also affects the price, with electric having the higher price, 
 followed by hybrid and then gas. The manufacturer that drives the price up are the ferri cars. That is
+
 1- target newer cars with low odometer readings 
+
 2- target luxury cars manufacturers such as ferrari and aston-martin
+
 3- target trucks with diesel
 
 ## Report
@@ -116,8 +120,10 @@ section to execute selected models, and collect any statistical information to a
 
                         model	selected alpha	Model r^2	MSE on train set	MSE on testing set
 model__alpha	GridSearchCV 	      0.01      0.562382	3.699130e+07	    3.911588e+07
-with Ridge and alphas=
-[1, 10, 20, 50, 100, 150, 200, 250, 500, 1000]	
+       with Ridge and alphas=[1,
+10, 20, 50, 100, 150, 200, 250, 500, 10
+
+
 ![fig7.png](images%2Ffig7.png)
 <br>
 ### Model Evaluation
@@ -125,7 +131,11 @@ Base on the r^2 values the best model is Ridge with alpha = 0.01 which gives us 
 which is not very high at all, I attempted to increase that value by removing some columns but it did not work. 
 The next steps would be to try different models and data transformations.
 Meanwhile, using the results of this model I would recommend for the car salesmen to 
+
 1- target newer cars with low odometer readings 
+
 2- target luxury cars manufacturers such as ferrari and aston-martin
+
 3- target trucks with diesel
 
+This project disproved my hypothesis that the age of the car, the condition and the manufacturer where going to be the driving factors affecting the price of a vehicle. Instead we have odometer as the leading feature, followed by the type of car and then the year.
